@@ -11,7 +11,7 @@ const app = express();
 middlewareConfig(app);
 
 app.get('/',(req, res) => {
-    res.send('Express app running');
+    res.send('E commerce store app running created by Okeke Chidiebube');
 })
 
 app.use('/api/v1/customers', CustomerRoutes);
