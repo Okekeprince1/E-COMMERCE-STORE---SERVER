@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
-    "start": "nodemon --exec babel-node src/index.js"
+    "start": "nodemon --exec ./node_modules/.bin/babel-node src/index.js"
   },
   "dependencies": {
     "axios": "0.18.0",
