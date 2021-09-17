@@ -1,7 +1,7 @@
 require('dotenv').config();
 import express from 'express';
 import middlewareConfig from './config/middleware';
-
+import 'babel-polyfill';
 import './config/db';
 
 import { CustomerRoutes, AddressRoutes } from './modules';
