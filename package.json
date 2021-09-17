@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
     "build-babel": "babel -d ./build ./src -s",
-    "build": "run build-babel",
+    "build": "npm run build-babel",
     "start": "node ./build/index.js"
   },
   "dependencies": {
