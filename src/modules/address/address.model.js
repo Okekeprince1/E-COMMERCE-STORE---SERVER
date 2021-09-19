@@ -23,11 +23,12 @@ const AddressSchema = new Schema ({
         type: { type: String },
         coords: [Number],
     },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'Customer'
+    },
     instructions: {
-        user: {
-            type: Schema.Types.ObjectId,
-            ref: 'Customer'
-        }
+        type: String
     }
 }, { timestamps: true })
 
